@@ -35,4 +35,9 @@ public partial class NotenrechnerForm : Form
 
     // TODO 3: LblNote.Text und LblBewertung.Text setzen
   }
+
+  private void TxtPunkte_TextChanged(object sender, EventArgs e)
+  {
+
+  }
 }

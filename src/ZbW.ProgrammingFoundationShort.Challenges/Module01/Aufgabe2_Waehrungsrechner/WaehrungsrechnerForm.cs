@@ -21,15 +21,11 @@ public partial class WaehrungsrechnerForm : Form
   {
     if (!decimal.TryParse(TxtBetrag.Text, out decimal betrag))
     {
-      MessageBox.Show("Bitte einen gültigen Betrag eingeben.",
-        "Ungültige Eingabe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       return;
     }
 
     if (betrag < 0 || betrag > MaxBetrag)
     {
-      MessageBox.Show("Bitte einen Betrag von 0 bis 1 Milliarde eingeben.",
-        "Ungültige Eingabe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       return;
     }
 
@@ -41,15 +37,11 @@ public partial class WaehrungsrechnerForm : Form
   {
     if (!decimal.TryParse(TxtBetrag.Text, out decimal betrag))
     {
-      MessageBox.Show("Bitte einen gültigen Betrag eingeben.",
-        "Ungültige Eingabe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       return;
     }
 
     if (betrag < 0 || betrag > MaxBetrag)
     {
-      MessageBox.Show("Bitte einen Betrag von 0 bis 1 Milliarde eingeben.",
-        "Ungültige Eingabe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
       return;
     }
 
