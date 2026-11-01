@@ -31,20 +31,22 @@ enum TrafficLightColor
     InitializeComponent();
   }
 
-  TrafficLightColor light;
-  private void Form1_Load(object sender, EventArgs e)
+    private void Form1_Load(object sender, EventArgs e)
     {
 
     }
 
     private void CmdAnzeigen_Click(object sender, EventArgs e)
     { 
-
+    // Guard Clause für den Fall, dass kein Radiobutton ausgewählt ist
     if (!(RadGreen.Checked || RadOrange.Checked || RadRot.Checked))
     {
       LblAnweisung.Text = "Bitte zuerst Ampelfarbe auswählen!";
       return;
     }
+
+    // Prüfen, welches Radio-Element ausgewählt ist
+    TrafficLightColor light;
 
     if (RadGreen.Checked)
     {
@@ -61,7 +63,7 @@ enum TrafficLightColor
       light = TrafficLightColor.Red;
     }
 
-    //string anweisung = light switch
+    // Events via klassischer switch-Methode wählen
     string anweisung;
     Color ampelFarbe;
 
